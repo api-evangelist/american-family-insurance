@@ -1,0 +1,7 @@
+aid: american-family-insurance
+url: https://raw.githubusercontent.com/api-evangelist/american-family-insurance/refs/heads/main/apis.yml
+modified: '2026-03-21'
+apis: []
+common:
+  - type: Website
+    url: https://www.american-family-insurance.com
