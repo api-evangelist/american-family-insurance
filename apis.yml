@@ -1,7 +1,11 @@
 aid: american-family-insurance
-url: https://raw.githubusercontent.com/api-evangelist/american-family-insurance/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/american-family-insurance/refs/heads/main/apis.yml
 modified: '2026-03-21'
 apis: []
 common:
   - type: Website
     url: https://www.american-family-insurance.com
+description: >-
+  American Family Insurance is a private mutual company that offers auto, homeowners,
+  life, business, and farm/ranch insurance throughout the United States.
