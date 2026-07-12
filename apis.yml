@@ -20,6 +20,8 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.j
 access: 3rd-Party
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/american-family-insurance-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/american-family-insurance
   - type: Website
