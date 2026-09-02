@@ -1,0 +1,21 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.amfam.com
+note: >-
+  No published rate limits. American Family Insurance ships no public API and no developer
+  documentation, so there is no documented quota, window, burst allowance, exhaustion status code,
+  or RateLimit-* response header to record. limit_count is an honest zero, not an omission — the
+  searches below were run and returned nothing to capture.
+provider: American Family Insurance
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status: null
+retry_after: null
+evidence:
+  - url: https://www.amfam.com
+    status: 200
+    detail: no developer/API documentation section exists on the corporate site
+  - url: https://api.amfam.com/openapi.json
+    status: <no response>
+    detail: host resolves but returned no response within a 10s ceiling; one attempt, not retried

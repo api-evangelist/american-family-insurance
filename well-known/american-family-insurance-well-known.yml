@@ -1,0 +1,115 @@
+generated: '2026-09-02'
+method: probed
+source: >-
+  Direct HTTP probes of the RFC-named /.well-known/ paths on every host American Family
+  Insurance publishes in apis.yml (www.amfam.com, b2b.amfam.com) plus the mobile/API host
+  api.amfam.com discovered via DNS.
+note: >-
+  NO HIT. Every probed path missed. www.amfam.com is a single-page-app catch-all that answers
+  HTTP 200 with the same ~143KB HTML document shell for every /.well-known/* path — that is an
+  SPA fallback, not a served document, and it is recorded as a miss. b2b.amfam.com returns clean
+  404s. api.amfam.com resolves and accepts TCP but returned no response within a 10s ceiling on
+  any path (one attempt per URL, per pipeline probe bounding). Because nothing returned a real
+  document, NO WellKnown or SecurityTxt pointer is emitted in apis.yml — this file records a
+  verified absence, not a presence.
+hosts:
+  - host: www.amfam.com
+    note: SPA catch-all — every path returns HTTP 200 with an identical HTML application shell (~143KB). Treated as a miss.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        result: miss
+        detail: HTML SPA shell, not RFC 9116 text
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 200
+        result: miss
+        detail: HTML SPA shell, not JSON
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        result: miss
+        detail: HTML SPA shell, not JSON
+        file: null
+      - path: /.well-known/api-catalog
+        status: 200
+        result: miss
+        detail: HTML SPA shell, not an RFC 9727 catalog
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        result: miss
+        detail: HTML SPA shell, not JSON
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 200
+        result: miss
+        detail: HTML SPA shell, not an A2A AgentCard
+        file: null
+      - path: /.well-known/agent.json
+        status: 200
+        result: miss
+        detail: HTML SPA shell, not an A2A AgentCard
+        file: null
+  - host: b2b.amfam.com
+    note: American Family B2B lender portal. Clean 404s — no well-known surface.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        result: miss
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        result: miss
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        result: miss
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        result: miss
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        result: miss
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        result: miss
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        result: miss
+        file: null
+  - host: api.amfam.com
+    note: >-
+      Resolves to 165.200.238.15. Not published in apis.yml; discovered by DNS during contract
+      discovery. Accepts the connection but returned no response body within a 10s ceiling on
+      every path. One attempt per URL — not retried.
+    documents:
+      - path: /.well-known/security.txt
+        status: <no response>
+        result: unreachable
+        detail: connection accepted, no response within 10s
+        file: null
+      - path: /.well-known/openid-configuration
+        status: <no response>
+        result: unreachable
+        detail: connection accepted, no response within 10s
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: <no response>
+        result: unreachable
+        detail: connection accepted, no response within 10s
+        file: null
+      - path: /.well-known/api-catalog
+        status: <no response>
+        result: unreachable
+        detail: connection accepted, no response within 10s
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: <no response>
+        result: unreachable
+        detail: connection accepted, no response within 10s
+        file: null

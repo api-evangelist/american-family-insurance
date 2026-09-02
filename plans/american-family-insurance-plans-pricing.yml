@@ -1,0 +1,22 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.amfam.com
+note: >-
+  American Family Insurance publishes no API plans or developer pricing of any kind. There is no
+  developer portal, no API product, and no self-serve sign-up for a programmatic interface —
+  amfam.com sells insurance policies to consumers through quote flows and exclusive agents, and
+  b2b.amfam.com is a credentialed lender portal, not a metered API product. Insurance premium
+  quoting is not an API plan and is deliberately not recorded here. plan_count is an honest zero.
+provider: American Family Insurance
+plan_count: 0
+plans: []
+pricing_model: none-published
+enterprise_only: false
+contact_sales: false
+evidence:
+  - url: https://www.amfam.com
+    status: 200
+    detail: consumer insurance site; no developer or API pricing section in navigation or footer
+  - url: https://b2b.amfam.com
+    status: 200
+    detail: single-page-app shell for the credentialed lender portal; no public plan or pricing surface

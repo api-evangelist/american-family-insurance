@@ -1,0 +1,65 @@
+# American Family Insurance
+
+> American Family Insurance is a private mutual insurance company headquartered in Madison, Wisconsin,
+> offering auto, homeowners, life, renters, umbrella, business, and farm/ranch insurance across the
+> United States. It reaches customers through a network of exclusive agents, the MyAmFam mobile app,
+> and online self-service.
+
+Provenance: generated 2026-09-02 by the API Evangelist enrichment pipeline from this repository's
+apis.yml and probe artifacts. American Family Insurance does not publish an llms.txt of its own;
+https://www.amfam.com/llms.txt returns the site's HTML application shell, not a document.
+
+## API surface
+
+American Family Insurance publishes **no public API, no developer portal, and no machine-readable
+contract**. Contract discovery on 2026-09-02 probed every candidate host and path and found nothing:
+
+- No OpenAPI/Swagger at www.amfam.com, b2b.amfam.com or api.amfam.com (`/openapi.json`,
+  `/swagger.json`, `/v1/openapi.json`, `/api-docs`, `/docs`, `/redoc`).
+- No GraphQL endpoint.
+- No hosted MCP server and no MCP `tools/list` surface.
+- No A2A agent card at `/.well-known/agent-card.json` or `/.well-known/agent.json`.
+- No `/.well-known/` documents of any kind (see well-known/american-family-insurance-well-known.yml).
+- `developer.amfam.com`, `developers.amfam.com`, `dev.amfam.com` and `apis.amfam.com` do not resolve.
+- The `amfamlabs` GitHub organization exists but publishes zero public repositories.
+
+`api.amfam.com` resolves and accepts connections — it appears to back the MyAmFam mobile app — but it
+is not a documented, published API and nothing about it is offered to third-party developers.
+
+Do not attempt to call an American Family Insurance API. There is no key to obtain and no contract to
+read. Integration with American Family is a commercial relationship arranged through the company, not
+a self-serve developer surface.
+
+## Company
+
+- [Website](https://www.amfam.com): auto, home, life, renters, umbrella, business and farm/ranch insurance.
+- [My Account](https://myaccount.amfam.com/login): policyholder self-service login.
+- [B2B Lender Portal](https://b2b.amfam.com): credentialed portal for mortgage lenders and servicers to
+  verify coverage, manage escrow billing and coordinate insurance requirements. Access is granted to
+  business partners; there is no public API behind it.
+- [Contact Us](https://www.amfam.com/contact): customer support channels.
+- [Newsroom](https://newsroom.amfam.com/): company news and press releases (RSS at /feed/).
+- [Articles](https://www.amfam.com/resources/articles): consumer insurance guidance.
+
+## Legal
+
+- [Terms and Conditions of Use](https://www.amfam.com/terms-and-conditions)
+- [Privacy and Security Policy](https://www.amfam.com/privacy-security)
+- [Legal Notice](https://www.amfam.com/legal-notice)
+
+## Products
+
+- Auto insurance — liability, collision, comprehensive, uninsured motorist, roadside assistance.
+- Home and renters insurance — property damage, personal liability, loss of use.
+- Life insurance — term, whole and universal.
+- Business insurance — property, general liability, workers compensation, professional liability.
+- Farm and ranch insurance.
+- Multi-policy bundling discounts.
+
+## This repository
+
+- apis.yml — the APIs.json profile for American Family Insurance.
+- security/american-family-insurance-domain-security.yml — probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture.
+- well-known/american-family-insurance-well-known.yml — the recorded /.well-known/ probe (all misses).
+- plans/american-family-insurance-plans-pricing.yml — no API plans published (plan_count: 0).
+- rate-limits/american-family-insurance-rate-limits.yml — no published rate limits (limit_count: 0).
