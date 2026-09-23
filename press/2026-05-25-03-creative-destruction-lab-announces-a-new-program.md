@@ -1,7 +1,9 @@
 ---
 title: Creative Destruction Lab announces a new program ...
 url: https://creativedestructionlab.com/blog/cdl-announces-a-new-program-focused-on-transforming-societys-ability-to-manage-risk/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"American Family Insurance Group" press release artificial intelligence'
 position: 3
 source: serpapi-google

@@ -1,7 +1,9 @@
 ---
 title: Artificial Intelligence at American Family Insurance Group
 url: https://emerj.com/artificial-intelligence-at-american-family-insurance-group/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"American Family Insurance Group" press release artificial intelligence'
 position: 1
 source: serpapi-google
