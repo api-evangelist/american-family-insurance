@@ -13,7 +13,7 @@ tags:
   - Home Insurance
   - Life Insurance
   - Property Casualty
-  - Financial-Services
+  - Financial Services
   - Fortune 500
 tags_raw:
   - Insurance
@@ -23,6 +23,7 @@ tags_raw:
   - Property Casualty
   - Financial Services
   - Fortune 500
+  - Financial-Services
 type: Index
 deliveryModel:
   model: unknown
