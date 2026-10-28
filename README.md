@@ -1,4 +1,4 @@
-# American Family Insurance (american-family-insurance)
+# American Family Insurance
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,56 +66,93 @@
 
 American Family Insurance is a private mutual company that offers auto, homeowners, life, renters, umbrella, business, and farm/ranch insurance throughout the United States. The company serves customers through a network of exclusive agents, digital tools including the MyAmFam mobile app, and online self-service capabilities. American Family is headquartered in Madison, Wisconsin, and is one of the largest property-casualty insurers in the country.
 
-**URL:** [https://www.amfam.com](https://www.amfam.com)
+**Areas:** Insurance · Auto Insurance · Home Insurance · Life Insurance · Property and Casualty · Financial Services · Fortune 500
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## American Family Insurance on APIs.io
 
-## Tags:
+Everything profiled for American Family Insurance is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/american-family-insurance/](https://apis.io/providers/american-family-insurance/)** — or go straight to one of the APIs or properties below.
 
- - Insurance, Auto Insurance, Home Insurance, Life Insurance, Property Casualty, Financial Services
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2024-11-15
-- **Modified:** 2026-04-19
+#### Security (1)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
+
+- [American Family Insurance Domain Security](https://apis.io/security/american-family-insurance/american-family-insurance-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [American Family Insurance Plans Pricing](https://apis.io/plans/american-family-insurance/american-family-insurance-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [American Family Insurance Rate Limits](https://apis.io/rate-limits/american-family-insurance/american-family-insurance-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.amfam.com)
-- [B2B Portal](https://b2b.amfam.com)
+- [Support](https://www.amfam.com/contact)
+- [Blog](https://newsroom.amfam.com/)
+- [Terms of service](https://www.amfam.com/terms-and-conditions)
+- [Privacy policy](https://www.amfam.com/privacy-security)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Auto Insurance | Customizable auto insurance coverage including liability, collision, comprehensive, uninsured motorist, and roadside assistance for personal and commercial vehicles. |
-| Home Insurance | Homeowners insurance protecting against property damage, personal liability, and loss of use, with optional coverage for valuables and natural disasters. |
-| Life Insurance | Term, whole, and universal life insurance products providing financial protection and wealth accumulation options for families and individuals. |
-| Business Insurance | Small business and commercial insurance covering property, liability, workers compensation, and professional liability for business owners. |
-| Multi-Policy Bundling | Discount programs allowing customers to save up to 40% by bundling home and auto insurance policies together. |
-| MyAmFam Digital App | Mobile app with 4.7-star rating enabling policy management, claims filing, bill payment, digital ID cards, and agent communication for customers. |
-| Online Claims Management | Digital claims filing and tracking tools allowing customers to report claims, upload documentation, and monitor claim status online and via mobile app. |
-| Lender Services Portal | B2B portal for mortgage lenders and financial institutions to verify insurance coverage, manage escrow billing, and coordinate insurance requirements. |
+**Kin Score 8.3** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 17.1 |
 
-| Name | Description |
-|------|-------------|
-| Personal Auto and Home Protection | Protecting personal vehicles and homes from accidents, theft, weather damage, and liability claims through bundled personal lines insurance policies. |
-| Small Business Coverage | Covering small business operations against property damage, general liability, professional liability, and workers compensation claims. |
-| Life Insurance Planning | Providing financial security for families through life insurance products that replace income and cover expenses in the event of the policyholder's death. |
-| Mortgage Lender Insurance Verification | Enabling mortgage lenders to verify homeowners insurance coverage requirements are met and manage escrow-based insurance premium payments. |
-| Digital Self-Service | Allowing customers to manage their entire insurance relationship digitally through the MyAmFam app and online portal without requiring agent interaction. |
+**Agent readiness 2.5** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Mortgage Lender Systems | B2B integration with mortgage servicers and lenders for insurance verification, escrow billing, and lender-placed insurance coordination. |
-| Agent Management Platforms | Integration with exclusive agent tools for policy quoting, binding, and customer management across all lines of business. |
+**Regulatory alignment 8.8** — Insurance
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/american-family-insurance/](https://apis.io/providers/american-family-insurance/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** info@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for American Family Insurance: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/american-family-insurance/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
